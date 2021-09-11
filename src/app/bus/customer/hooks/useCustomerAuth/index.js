@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {loader} from 'graphql.macro';
 import {useMutation} from "@apollo/react-hooks";
 //Hooks
@@ -13,7 +13,6 @@ export const useCustomerAuth = () => {
         username: '',
         password: ''
     });
-    // const [isAutorized, setIsAutorized] = useState(false);
 
     const autorizedCustomer = data && data.logIn;
     const token = autorizedCustomer && autorizedCustomer.token;
