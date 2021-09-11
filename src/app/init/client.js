@@ -1,7 +1,7 @@
 // Core
 import {ApolloClient} from 'apollo-client';
 import {split} from 'apollo-link';
-import {WebSocketLink} from 'apollo-link-ws'
+import {WebSocketLink} from 'apollo-link-ws';
 import {getMainDefinition} from 'apollo-utilities';
 import {createHttpLink} from 'apollo-link-http';
 import {InMemoryCache} from 'apollo-cache-inmemory';
@@ -36,6 +36,7 @@ const authLink = setContext((_, {headers}) => {
 });
 
 const wrappedHttpLink = authLink.concat(httpLink);
+
 const link = split(
     ({query}) => {
         const definition = getMainDefinition(query);
