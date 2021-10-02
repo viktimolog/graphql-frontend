@@ -9,7 +9,7 @@ export const Registration = () => {
 
     const userJSX = createdUser && (
         <p>
-            We already created customer with name: {createdUser.name}
+            We have created customer with name: {createdUser.name}
         </p>
     );
 
