@@ -2,15 +2,15 @@
 import React from 'react';
 
 // Hooks
-import { useCheckin } from './hooks/useCheckin';
+import {useCheckin} from './hooks/useCheckin';
 
 export const CheckinPet = () => {
-    const { checkIn, pet, errors, error } = useCheckin();
+    const {checkIn, pet, errors, error} = useCheckin();
 
     const petJSX = pet && (
         <>
-            <p>Id: { pet.id }</p>
-            <p>Name: { pet.name }</p>
+            <p>Id: {pet.id}</p>
+            <p>Name: {pet.name}</p>
         </>
     );
 

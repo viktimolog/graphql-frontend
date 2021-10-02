@@ -6,7 +6,7 @@ export const Customer = () => {
 
     const customerJSX = createdAccount && (
         <p>
-            We already created account with name: {createdAccount.name}
+            We have created account with name: {createdAccount.name}
         </p>
     );
 
